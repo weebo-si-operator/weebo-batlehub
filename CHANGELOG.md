@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.5.1](https://github.com/batleforc/weebo-batlehub/compare/5deaf10ddeed0c0b1f7c47f52046354e58efd390..v0.5.1) - 2026-11-06
+#### Continuous Integration
+- move to the weebo-si-operator GitHub org - ([5deaf10](https://github.com/batleforc/weebo-batlehub/commit/5deaf10ddeed0c0b1f7c47f52046354e58efd390)) - Max Batleforc, Claude Opus 5.5
+
+- - -
+
 ## [v0.5.0](https://github.com/weebo-si-operator/weebo-batlehub/compare/dea9eaca29f96c968428052d55f66970b9fd58ef..v0.5.0) - 2026-10-22
 #### Features
 - kit v0.24.0, upstream registries and hosts drawn in the CRD IDE (#20) - ([dea9eac](https://github.com/weebo-si-operator/weebo-batlehub/commit/dea9eaca29f96c968428052d55f66970b9fd58ef)) - Maxime, Claude Opus 5.5 (1M context)
