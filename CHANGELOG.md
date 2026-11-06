@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.6.0](https://github.com/weebo-si-operator/weebo-batlehub/compare/4a63f5503a9c132ac4daed73f99c8251f30ba5bc..v0.6.0) - 2026-11-06
+#### Features
+- (**vault**) additional mounts in other Vault namespaces (kit v0.29.0) - ([4a63f55](https://github.com/weebo-si-operator/weebo-batlehub/commit/4a63f5503a9c132ac4daed73f99c8251f30ba5bc)) - Max Batleforc, Claude Opus 5.5
+
+- - -
+
 ## [v0.5.3](https://github.com/weebo-si-operator/weebo-batlehub/compare/be25423086bb0a28321e3cd15be24606dd24c9e2..v0.5.3) - 2026-11-06
 #### Continuous Integration
 - accept CVE-2026-84243 (glibc of the core runtime) until 2026-12-06 - ([be25423](https://github.com/weebo-si-operator/weebo-batlehub/commit/be25423086bb0a28321e3cd15be24606dd24c9e2)) - Max Batleforc, Claude Opus 5.5
