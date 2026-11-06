@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.5.2](https://github.com/weebo-si-operator/weebo-batlehub/compare/715359fa001fc10e725267d765d80fce32d02c51..v0.5.2) - 2026-11-06
+#### Miscellaneous Chores
+- (**deps**) weebo-operator-kit v0.28.1 - ([715359f](https://github.com/weebo-si-operator/weebo-batlehub/commit/715359fa001fc10e725267d765d80fce32d02c51)) - Max Batleforc, Claude Opus 5.5
+
+- - -
+
 ## [v0.5.1](https://github.com/batleforc/weebo-batlehub/compare/5deaf10ddeed0c0b1f7c47f52046354e58efd390..v0.5.1) - 2026-11-06
 #### Continuous Integration
 - move to the weebo-si-operator GitHub org - ([5deaf10](https://github.com/batleforc/weebo-batlehub/commit/5deaf10ddeed0c0b1f7c47f52046354e58efd390)) - Max Batleforc, Claude Opus 5.5
