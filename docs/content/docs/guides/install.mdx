@@ -3,13 +3,13 @@ title: Install via Helm
 description: Bring up the operator with its chart.
 ---
 
-The chart lives at `oci://ghcr.io/batleforc/charts/weebo-batlehub`. It
+The chart lives at `oci://ghcr.io/weebo-si-operator/charts/weebo-batlehub`. It
 needs [cert-manager](https://cert-manager.io) for the certificate of the
 operator's HTTPS server (probes and admission webhooks).
 
 ```bash
 helm install weebo-batlehub \
-  oci://ghcr.io/batleforc/charts/weebo-batlehub \
+  oci://ghcr.io/weebo-si-operator/charts/weebo-batlehub \
   --namespace weebo-batlehub --create-namespace \
   --version <version>
 ```
@@ -46,7 +46,7 @@ the webhook refuses another, and the operator applies nothing for it
 (`InvalidSpec`). Add your mirror there:
 
 ```bash
-helm upgrade weebo-batlehub oci://ghcr.io/batleforc/charts/weebo-batlehub \
+helm upgrade weebo-batlehub oci://ghcr.io/weebo-si-operator/charts/weebo-batlehub \
   --reuse-values \
   --set 'managedInstances.allowedImages={registry.example.com/batlehub/batlehub,registry.example.com/batlehub/batlehub-worker}'
 ```

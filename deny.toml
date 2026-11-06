@@ -67,6 +67,6 @@ unknown-git = "deny"
 # The shared operator kit and BatleHub's configuration parser, both
 # pinned by tag in Cargo.toml.
 allow-git = [
-    "https://github.com/batleforc/weebo-operator-kit",
+    "https://github.com/weebo-si-operator/weebo-operator-kit",
     "https://github.com/batleforc/batlehub",
 ]

@@ -6,9 +6,9 @@ version: 0.5.0
 appVersion: "0.5.0"
 # Native `preStop: sleep` and the admission/policy APIs used here.
 kubeVersion: ">=1.30.0-0"
-home: https://github.com/batleforc/weebo-batlehub
+home: https://github.com/weebo-si-operator/weebo-batlehub
 sources:
-  - https://github.com/batleforc/weebo-batlehub
+  - https://github.com/weebo-si-operator/weebo-batlehub
 keywords:
   - batlehub
   - operator

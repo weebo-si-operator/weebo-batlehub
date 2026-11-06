@@ -522,7 +522,7 @@ corrigée dans le kit v0.14 (K16) et dans forgejo
 ### 3.1 Workspace
 
 Généré par le gabarit du kit
-(`cargo generate --git https://github.com/batleforc/weebo-operator-kit --tag v0.14.2 templates/operator`,
+(`cargo generate --git https://github.com/weebo-si-operator/weebo-operator-kit --tag v0.14.2 templates/operator`,
 `product = BatleHub`), rendu hors de tout workspace. v0.14.2 est la
 première version dont le gabarit lit le token d'une instance namespacée
 par `read_local_instance_token` (opt-in du label, 2.11) ; un rendu d'un
@@ -550,7 +550,7 @@ CR réconcilié, tout passe par les ports.
 
 | Quoi | Valeur |
 | --- | --- |
-| Repo / chart / image | `weebo-batlehub`, `ghcr.io/batleforc/weebo-batlehub` |
+| Repo / chart / image | `weebo-batlehub`, `ghcr.io/weebo-si-operator/weebo-batlehub` |
 | Groupe / version | `batlehub.weebo.io/v1alpha1` |
 | Kinds (short names) | `BatleHubLocalInstance` (`bhli`), `BatleHubRegistry` (`bhr`), `BatleHubMaintenance` (`bhm`), `BatleHubPackageGrant` (`bhpg`), `BatleHubPackagePolicy` (`bhpp`) |
 | Field manager, reporter d'Events | `weebo-batlehub-operator` |
@@ -1837,7 +1837,7 @@ kit, épinglés sur son tag, sur le modèle de weebo-forgejo.
   à la main, et **porte de la publication**.
 - `publish.yml` sur tag `v*` : job `e2e` (le `e2e.yml` ci-dessus sur le
   tag) puis `publish` =
-  `batleforc/weebo-operator-kit/.github/workflows/publish.yml@v0.14.2`
+  `weebo-si-operator/weebo-operator-kit/.github/workflows/publish.yml@v0.14.2`
   (scan Grype `--fail-on high`, cosign keyless, SBOM, chart OCI après
   l'image, release GitHub ; amd64 par défaut, `arm64` en option). Seule
   l'image principale est une porte : `variants` déclare
@@ -1878,7 +1878,7 @@ avec ce document) sont ajoutés ici, sous « Constats du Mx ».
 
 ### Constats du M0 (2026-10-14)
 
-Repo `github.com/batleforc/weebo-batlehub` (public), commit `394cd62`,
+Repo `github.com/weebo-si-operator/weebo-batlehub` (public), commit `394cd62`,
 CI, docs (GitHub Pages) et e2e kind verts au premier passage. Pas de
 `test:live-batlehub` au M0 : la tâche et le conteneur batlehub arrivent
 avec le M1.

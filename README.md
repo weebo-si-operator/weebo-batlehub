@@ -2,7 +2,7 @@
 
 Kubernetes operator driving [BatleHub](https://github.com/batlehub/batlehub)
 (package registry proxy-cache) instances as CRDs, built on
-[weebo-operator-kit](https://github.com/batleforc/weebo-operator-kit).
+[weebo-operator-kit](https://github.com/weebo-si-operator/weebo-operator-kit).
 
 > **M4 — managed instances.** A `BatleHubLocalInstance` is either an
 > existing BatleHub the operator connects to (`external`, which with
@@ -26,7 +26,7 @@ Kubernetes operator driving [BatleHub](https://github.com/batlehub/batlehub)
 `weebo-batlehub-importer` (in the same images) describes what exists as
 CRs: a Helm release of BatleHub as a `BatleHubLocalInstance`, and the
 grants and policies of a live instance, adopted
-([guide](https://batleforc.github.io/weebo-batlehub/docs/guides/migration)).
+([guide](https://weebo-si-operator.github.io/weebo-batlehub/docs/guides/migration)).
 
 The token Secret must be labelled `batlehub.weebo.io/instance-token: "true"`:
 the operator reads Secrets with its own rights and sends the token to the
@@ -53,7 +53,7 @@ Hexagonal, one crate per layer, same rules as every weebo operator:
 `templates/_params.tpl` holds what is the operator's own, `values.yaml`
 follows the kit's values contract. `docs/` is the documentation site
 (`@weebo/operator-docs`), published to
-<https://batleforc.github.io/weebo-batlehub>.
+<https://weebo-si-operator.github.io/weebo-batlehub>.
 
 ## Tasks
 

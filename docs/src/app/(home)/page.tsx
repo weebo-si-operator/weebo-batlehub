@@ -13,7 +13,7 @@ export default function HomePage() {
         { href: '/docs/ide', label: 'Access the CRD IDE' },
       ]}
       install={`helm install weebo-batlehub \\
-  oci://ghcr.io/batleforc/charts/weebo-batlehub \\
+  oci://ghcr.io/weebo-si-operator/charts/weebo-batlehub \\
   --namespace weebo-batlehub --create-namespace \\
   --set certManager.issuerRef.name=<issuer>`}
       example={{

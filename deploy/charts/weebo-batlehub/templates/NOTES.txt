@@ -23,7 +23,7 @@
 
    Or let the operator deploy BatleHub: `spec.managed` instead of
    `spec.external` (Deployments, Service, cache, its own admin token):
-   https://batleforc.github.io/weebo-batlehub/docs/guides/managed-instance
+   https://weebo-si-operator.github.io/weebo-batlehub/docs/guides/managed-instance
 
 2. With `spec.external.manageConfig: true` the operator pushes the
    configuration rendered from `spec.config`, `spec.configLayers` and the
@@ -32,18 +32,18 @@
 
      kubectl -n <namespace> label secret <name> batlehub.weebo.io/credential=true
 
-   Guide: https://batleforc.github.io/weebo-batlehub/docs/guides/manage-config
+   Guide: https://weebo-si-operator.github.io/weebo-batlehub/docs/guides/manage-config
 
    A BatleHubNamespaceClaim (`kubectl get bhnc`) reserves a package prefix
    of a registry to a group:
-   https://batleforc.github.io/weebo-batlehub/docs/guides/team-namespaces
+   https://weebo-si-operator.github.io/weebo-batlehub/docs/guides/team-namespaces
 
    BatleHubPackageGrant and BatleHubPackagePolicy (`kubectl get bhpg,bhpp`)
    write the grants and policies of a package or a version:
-   https://batleforc.github.io/weebo-batlehub/docs/guides/package-governance
+   https://weebo-si-operator.github.io/weebo-batlehub/docs/guides/package-governance
 
    A BatleHubMaintenance (`kubectl get bhm`) runs an admin action, once or
-   on a schedule: https://batleforc.github.io/weebo-batlehub/docs/guides/maintenance
+   on a schedule: https://weebo-si-operator.github.io/weebo-batlehub/docs/guides/maintenance
 
 3. Creating a BatleHubLocalInstance sends a Secret of its namespace to the
    URL it names: grant the kind like you grant pods.
