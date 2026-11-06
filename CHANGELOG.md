@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.5.3](https://github.com/weebo-si-operator/weebo-batlehub/compare/be25423086bb0a28321e3cd15be24606dd24c9e2..v0.5.3) - 2026-11-06
+#### Continuous Integration
+- accept CVE-2026-84243 (glibc of the core runtime) until 2026-12-06 - ([be25423](https://github.com/weebo-si-operator/weebo-batlehub/commit/be25423086bb0a28321e3cd15be24606dd24c9e2)) - Max Batleforc, Claude Opus 5.5
+
+- - -
+
 ## [v0.5.2](https://github.com/weebo-si-operator/weebo-batlehub/compare/715359fa001fc10e725267d765d80fce32d02c51..v0.5.2) - 2026-11-06
 #### Miscellaneous Chores
 - (**deps**) weebo-operator-kit v0.28.1 - ([715359f](https://github.com/weebo-si-operator/weebo-batlehub/commit/715359fa001fc10e725267d765d80fce32d02c51)) - Max Batleforc, Claude Opus 5.5
