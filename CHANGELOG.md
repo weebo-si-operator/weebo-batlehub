@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.7.0](https://github.com/weebo-si-operator/weebo-batlehub/compare/93860c7efd7b2b7e7a2d58fbc10f7c13b4cdc446..v0.7.0) - 2026-11-14
+#### Features
+- (**chart**) networkPolicy.kind CiliumNetworkPolicy (kit v0.32.0) - ([d24e08b](https://github.com/weebo-si-operator/weebo-batlehub/commit/d24e08b54f3479c8afa1fe7c946d399fefedaad8)) - Max Batleforc, Claude Opus 5.5
+#### Bug Fixes
+- (**deps**) ammonia 4.2.5, RUSTSEC-2026-0533 - ([93860c7](https://github.com/weebo-si-operator/weebo-batlehub/commit/93860c7efd7b2b7e7a2d58fbc10f7c13b4cdc446)) - Max Batleforc, Claude Opus 5.5
+- (**image**) core-runtime base with libgcc 16.2.1-3.2 - ([10b5d6d](https://github.com/weebo-si-operator/weebo-batlehub/commit/10b5d6d5f02f7793f05b56a8504dc5ad908da743)) - Max Batleforc, Claude Opus 5.5
+
+- - -
+
 ## [v0.6.0](https://github.com/weebo-si-operator/weebo-batlehub/compare/4a63f5503a9c132ac4daed73f99c8251f30ba5bc..v0.6.0) - 2026-11-06
 #### Features
 - (**vault**) additional mounts in other Vault namespaces (kit v0.29.0) - ([4a63f55](https://github.com/weebo-si-operator/weebo-batlehub/commit/4a63f5503a9c132ac4daed73f99c8251f30ba5bc)) - Max Batleforc, Claude Opus 5.5
