@@ -1,29 +1,29 @@
 {
   "label": "weebo-batlehub",
-  "startup_secs": 0.102055903,
-  "shutdown_secs": 0.01038312,
+  "startup_secs": 0.100553689,
+  "shutdown_secs": 0.008746475,
   "background_api_requests_per_min": 20.0,
   "phases": [
     {
       "name": "startup",
       "kind": "idle",
-      "wall_secs": 30.025969305,
+      "wall_secs": 30.032702034,
       "usage": {
         "samples": 121,
-        "rss_peak_mib": 23.33984375,
-        "rss_median_mib": 23.328125,
+        "rss_peak_mib": 26.69140625,
+        "rss_median_mib": 26.6875,
         "cpu_seconds": 0.01,
-        "cpu_mean_millicores": 0.3333286296108204,
-        "cpu_peak_millicores": 39.823442607904084,
-        "rss_slope_mib_per_min": 0.3661195131162489,
-        "fds_max": 27,
-        "threads_max": 17
+        "cpu_mean_millicores": 0.33333148345471064,
+        "cpu_peak_millicores": 40.08743647153527,
+        "rss_slope_mib_per_min": 0.3555112637024148,
+        "fds_max": 23,
+        "threads_max": 5
       },
       "reconciles": 1.0,
       "reconcile_errors": 0.0,
       "reconcile_p95_secs": 0.00975,
-      "api_requests": 25.991343565,
-      "api_requests_per_min": 51.93772757372104,
+      "api_requests": 21.989099322,
+      "api_requests_per_min": 43.930311625852696,
       "api_top": [
         [
           "PUT leases",
@@ -31,10 +31,6 @@
         ],
         [
           "GET leases",
-          6.0
-        ],
-        [
-          "LIST batlehublocalinstances",
           6.0
         ],
         [
@@ -56,6 +52,10 @@
         [
           "GET secrets",
           1.0
+        ],
+        [
+          "LIST configmaps",
+          1.0
         ]
       ],
       "objects": null,
@@ -64,23 +64,23 @@
     {
       "name": "warm-up burst",
       "kind": "load",
-      "wall_secs": 1.229517805,
+      "wall_secs": 1.428561353,
       "usage": {
-        "samples": 5,
-        "rss_peak_mib": 31.640625,
-        "rss_median_mib": 31.03125,
-        "cpu_seconds": 1.03,
-        "cpu_mean_millicores": 1029.2357122033034,
-        "cpu_peak_millicores": 1323.3053255761179,
-        "rss_slope_mib_per_min": 224.3776806053811,
-        "fds_max": 33,
-        "threads_max": 17
+        "samples": 6,
+        "rss_peak_mib": 31.54296875,
+        "rss_median_mib": 31.43359375,
+        "cpu_seconds": 0.7000000000000001,
+        "cpu_mean_millicores": 559.7999816751875,
+        "cpu_peak_millicores": 922.5702548981791,
+        "rss_slope_mib_per_min": 115.74298081706111,
+        "fds_max": 31,
+        "threads_max": 5
       },
       "reconciles": 200.0,
       "reconcile_errors": 0.0,
-      "reconcile_p95_secs": 0.02401459854014599,
-      "api_requests": 1199.5901607316666,
-      "api_requests_per_min": 58539.54237279223,
+      "reconcile_p95_secs": 0.02376470588235294,
+      "api_requests": 1199.5238128823332,
+      "api_requests_per_min": 50380.355468667076,
       "api_top": [
         [
           "PATCH batlehubpackagegrants",
@@ -112,28 +112,28 @@
         ]
       ],
       "objects": 200,
-      "convergence_secs": 1.201590322
+      "convergence_secs": 1.399131989
     },
     {
       "name": "warm-up churn",
       "kind": "load",
-      "wall_secs": 0.857794989,
+      "wall_secs": 1.153560634,
       "usage": {
-        "samples": 3,
-        "rss_peak_mib": 32.4609375,
-        "rss_median_mib": 31.8984375,
-        "cpu_seconds": 0.7400000000000002,
-        "cpu_mean_millicores": 1479.9697434985644,
-        "cpu_peak_millicores": 1562.5429887127548,
-        "rss_slope_mib_per_min": 78.31073332889007,
-        "fds_max": 35,
-        "threads_max": 17
+        "samples": 4,
+        "rss_peak_mib": 32.17578125,
+        "rss_median_mib": 32.12109375,
+        "cpu_seconds": 0.6400000000000001,
+        "cpu_mean_millicores": 853.9705969357084,
+        "cpu_peak_millicores": 881.411411143956,
+        "rss_slope_mib_per_min": 30.765459784178013,
+        "fds_max": 32,
+        "threads_max": 5
       },
       "reconciles": 200.0,
       "reconcile_errors": 0.0,
-      "reconcile_p95_secs": 0.024055944055944058,
-      "api_requests": 798.714068337,
-      "api_requests_per_min": 55867.47965978151,
+      "reconcile_p95_secs": 0.024496644295302017,
+      "api_requests": 801.6154797886667,
+      "api_requests_per_min": 41694.322231283775,
       "api_top": [
         [
           "PATCH batlehubpackagegrants",
@@ -150,31 +150,43 @@
         [
           "LIST batlehubpackagegrants",
           2.0
+        ],
+        [
+          "GET endpoints",
+          1.0
+        ],
+        [
+          "GET endpointslices",
+          1.0
+        ],
+        [
+          "PUT leases",
+          1.0
         ]
       ],
       "objects": 200,
-      "convergence_secs": 0.830102286
+      "convergence_secs": 1.118808471
     },
     {
       "name": "warm-up delete",
       "kind": "load",
-      "wall_secs": 1.286486573,
+      "wall_secs": 1.025654418,
       "usage": {
-        "samples": 6,
-        "rss_peak_mib": 34.07421875,
-        "rss_median_mib": 34.06640625,
-        "cpu_seconds": 1.1399999999999997,
-        "cpu_mean_millicores": 912.4507776927231,
-        "cpu_peak_millicores": 1607.218209846606,
-        "rss_slope_mib_per_min": 71.20211539191038,
-        "fds_max": 34,
-        "threads_max": 17
+        "samples": 5,
+        "rss_peak_mib": 33.140625,
+        "rss_median_mib": 32.52734375,
+        "cpu_seconds": 0.7299999999999998,
+        "cpu_mean_millicores": 729.7733703393875,
+        "cpu_peak_millicores": 1001.5852329862931,
+        "rss_slope_mib_per_min": 61.569329077632695,
+        "fds_max": 30,
+        "threads_max": 5
       },
       "reconciles": 0.0,
       "reconcile_errors": 0.0,
       "reconcile_p95_secs": null,
-      "api_requests": 1001.5711711423334,
-      "api_requests_per_min": 46711.92963048515,
+      "api_requests": 998.658115194,
+      "api_requests_per_min": 58420.7369071558,
       "api_top": [
         [
           "POST events",
@@ -198,40 +210,32 @@
         ],
         [
           "LIST batlehubpackagegrants",
-          3.0
-        ],
-        [
-          "GET endpoints",
-          1.0
-        ],
-        [
-          "GET endpointslices",
-          1.0
+          2.0
         ]
       ],
       "objects": 200,
-      "convergence_secs": 1.25886377
+      "convergence_secs": 0.996365205
     },
     {
       "name": "baseline",
       "kind": "idle",
-      "wall_secs": 30.029785414,
+      "wall_secs": 30.036358704,
       "usage": {
         "samples": 120,
-        "rss_peak_mib": 34.08203125,
-        "rss_median_mib": 34.07421875,
+        "rss_peak_mib": 33.23046875,
+        "rss_median_mib": 33.140625,
         "cpu_seconds": 0.0,
         "cpu_mean_millicores": 0.0,
         "cpu_peak_millicores": 0.0,
-        "rss_slope_mib_per_min": -0.021551127206526823,
-        "fds_max": 30,
-        "threads_max": 17
+        "rss_slope_mib_per_min": 0.12979764151180656,
+        "fds_max": 29,
+        "threads_max": 5
       },
       "reconciles": 0.0,
       "reconcile_errors": 0.0,
       "reconcile_p95_secs": null,
-      "api_requests": 15.990071528666668,
-      "api_requests_per_min": 31.948423156987403,
+      "api_requests": 15.987880432,
+      "api_requests_per_min": 31.937054533586046,
       "api_top": [
         [
           "PUT leases",
@@ -260,23 +264,23 @@
     {
       "name": "cycle burst",
       "kind": "load",
-      "wall_secs": 1.235172384,
+      "wall_secs": 1.423085643,
       "usage": {
-        "samples": 5,
-        "rss_peak_mib": 34.69921875,
-        "rss_median_mib": 34.4765625,
-        "cpu_seconds": 1.08,
-        "cpu_mean_millicores": 1078.9722228511787,
-        "cpu_peak_millicores": 1318.4427082107702,
-        "rss_slope_mib_per_min": 30.912942291914423,
-        "fds_max": 33,
-        "threads_max": 17
+        "samples": 6,
+        "rss_peak_mib": 33.6015625,
+        "rss_median_mib": 33.53515625,
+        "cpu_seconds": 0.7600000000000002,
+        "cpu_mean_millicores": 607.7879316073644,
+        "cpu_peak_millicores": 959.5117236740576,
+        "rss_slope_mib_per_min": 18.90900369863257,
+        "fds_max": 30,
+        "threads_max": 5
       },
       "reconciles": 200.0,
       "reconcile_errors": 0.0,
-      "reconcile_p95_secs": 0.02392857142857143,
-      "api_requests": 1198.588275872,
-      "api_requests_per_min": 58222.882476880244,
+      "reconcile_p95_secs": 0.02353658536585366,
+      "api_requests": 1200.525638119,
+      "api_requests_per_min": 50616.44648124666,
       "api_top": [
         [
           "PATCH batlehubpackagegrants",
@@ -301,31 +305,39 @@
         [
           "LIST batlehubpackagegrants",
           3.0
+        ],
+        [
+          "GET leases",
+          1.0
+        ],
+        [
+          "PUT leases",
+          1.0
         ]
       ],
       "objects": 200,
-      "convergence_secs": 1.20204201
+      "convergence_secs": 1.3751989949999999
     },
     {
       "name": "cycle loaded",
       "kind": "idle",
-      "wall_secs": 30.031833104,
+      "wall_secs": 30.033148935,
       "usage": {
         "samples": 120,
-        "rss_peak_mib": 34.69921875,
-        "rss_median_mib": 34.69921875,
+        "rss_peak_mib": 33.6015625,
+        "rss_median_mib": 33.6015625,
         "cpu_seconds": 0.0,
         "cpu_mean_millicores": 0.0,
         "cpu_peak_millicores": 0.0,
         "rss_slope_mib_per_min": 0.0,
-        "fds_max": 30,
-        "threads_max": 17
+        "fds_max": 29,
+        "threads_max": 5
       },
       "reconciles": 0.0,
       "reconcile_errors": 0.0,
       "reconcile_p95_secs": null,
-      "api_requests": 15.989388965333333,
-      "api_requests_per_min": 31.944881106582216,
+      "api_requests": 15.988950355,
+      "api_requests_per_min": 31.942605265144504,
       "api_top": [
         [
           "PUT leases",
@@ -354,23 +366,23 @@
     {
       "name": "cycle churn",
       "kind": "load",
-      "wall_secs": 0.864491893,
+      "wall_secs": 1.1505805279999999,
       "usage": {
-        "samples": 4,
-        "rss_peak_mib": 34.91796875,
-        "rss_median_mib": 34.80078125,
-        "cpu_seconds": 1.0999999999999996,
-        "cpu_mean_millicores": 1468.2244214557097,
-        "cpu_peak_millicores": 1564.21667766859,
-        "rss_slope_mib_per_min": 17.074802321601293,
-        "fds_max": 34,
-        "threads_max": 17
+        "samples": 5,
+        "rss_peak_mib": 33.9921875,
+        "rss_median_mib": 33.90234375,
+        "cpu_seconds": 0.6699999999999999,
+        "cpu_mean_millicores": 670.3157582707752,
+        "cpu_peak_millicores": 1000.0843031064146,
+        "rss_slope_mib_per_min": 22.341547394812995,
+        "fds_max": 32,
+        "threads_max": 5
       },
       "reconciles": 200.0,
       "reconcile_errors": 0.0,
-      "reconcile_p95_secs": 0.024006622516556293,
-      "api_requests": 798.7118360356667,
-      "api_requests_per_min": 55434.53969919415,
+      "reconcile_p95_secs": 0.025,
+      "api_requests": 799.6164731573333,
+      "api_requests_per_min": 41698.07086239861,
       "api_top": [
         [
           "PATCH batlehubpackagegrants",
@@ -387,31 +399,35 @@
         [
           "LIST batlehubpackagegrants",
           2.0
+        ],
+        [
+          "GET ",
+          1.0
         ]
       ],
       "objects": 200,
-      "convergence_secs": 0.836501261
+      "convergence_secs": 1.12051969
     },
     {
       "name": "cycle delete",
       "kind": "load",
-      "wall_secs": 1.280375537,
+      "wall_secs": 1.026526304,
       "usage": {
-        "samples": 5,
-        "rss_peak_mib": 36.3125,
-        "rss_median_mib": 36.23046875,
-        "cpu_seconds": 0.9700000000000006,
-        "cpu_mean_millicores": 971.043775925787,
-        "cpu_peak_millicores": 1490.7053634225258,
-        "rss_slope_mib_per_min": 69.53042695566974,
-        "fds_max": 33,
-        "threads_max": 17
+        "samples": 4,
+        "rss_peak_mib": 35.19921875,
+        "rss_median_mib": 35.15234375,
+        "cpu_seconds": 0.6200000000000001,
+        "cpu_mean_millicores": 826.8603515378915,
+        "cpu_peak_millicores": 958.9244281686921,
+        "rss_slope_mib_per_min": 89.65381814872325,
+        "fds_max": 30,
+        "threads_max": 5
       },
       "reconciles": 0.0,
       "reconcile_errors": 0.0,
       "reconcile_p95_secs": null,
-      "api_requests": 999.5732081543333,
-      "api_requests_per_min": 46841.251457977516,
+      "api_requests": 998.6578245653334,
+      "api_requests_per_min": 58371.099932301404,
       "api_top": [
         [
           "POST events",
@@ -435,36 +451,32 @@
         ],
         [
           "LIST batlehubpackagegrants",
-          3.0
-        ],
-        [
-          "GET ",
-          1.0
+          2.0
         ]
       ],
       "objects": 200,
-      "convergence_secs": 1.249470517
+      "convergence_secs": 0.996725798
     },
     {
       "name": "final",
       "kind": "idle",
-      "wall_secs": 30.035912745,
+      "wall_secs": 30.034461819,
       "usage": {
         "samples": 120,
-        "rss_peak_mib": 36.3125,
-        "rss_median_mib": 36.3125,
-        "cpu_seconds": 0.009999999999999787,
-        "cpu_mean_millicores": 0.33613162299961125,
-        "cpu_peak_millicores": 39.858202849035585,
+        "rss_peak_mib": 35.19921875,
+        "rss_median_mib": 35.19921875,
+        "cpu_seconds": 0.0,
+        "cpu_mean_millicores": 0.0,
+        "cpu_peak_millicores": 0.0,
         "rss_slope_mib_per_min": 0.0,
-        "fds_max": 30,
-        "threads_max": 17
+        "fds_max": 29,
+        "threads_max": 5
       },
       "reconciles": 0.0,
       "reconcile_errors": 0.0,
       "reconcile_p95_secs": null,
-      "api_requests": 15.988029085,
-      "api_requests_per_min": 31.937825670361526,
+      "api_requests": 15.988512727,
+      "api_requests_per_min": 31.940334719536526,
       "api_top": [
         [
           "PUT leases",
@@ -491,6 +503,6 @@
       "convergence_secs": null
     }
   ],
-  "measured_at": "2026-10-15T18:42:43.132098959Z",
-  "kit_version": "0.15.1"
+  "measured_at": "2026-11-16T12:17:48.099146898Z",
+  "kit_version": "0.32.0"
 }
